@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+    outline: none;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Butler;
+}
+h1 {
+    font-size: 70px !important;
+}
+
+h2 {
+    font-size: 36 !important;
+}
+
+h3 {
+    font-size: 26px !important;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header ul li a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.banner {
+    height: 100vh;
+    background: url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner .text {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+/* global button */
+
+.b-btn {
+    position: relative;
+    display: inline-block !important;
+    width: 250px;
+    height: 60px ;
+    background-color: #fff !important;
+    color: #000;
+    line-height: 60px;
+    text-align: center !important;
+    margin-top: 50px;
+    z-index: 9;
+    transition: all ease .5s;
+}
+
+.b-btn::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color:#000;
+    opacity: .9;
+    z-index: -1;
+    transition: all ease .5s;
+}
+
+.b-btn:hover {
+    color: #fff;
+}
+
+.b-btn:hover:before {
+    top: 0;
+    height: 100%;
+}
+
+.brand-logo {
+    padding: 30px 0;
+}
+
+.brand-logo-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec1 {
+    position: relative;
+    padding: 80px 0;
+}
+
+.sec1 h3 {
+    line-height: 40px !important;
+}
+
+.sec1 p {
+    line-height: 32px;
+}
+
+.sec1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #fff, transparent);
+}
+
+.sec1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #fff, transparent);
+}
+
+.sec2 {
+    padding: 100px 0 0;
+}
+
+.sec2 p {
+    line-height: 30px;
+}
+.sec2-inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.sec2-inner img {
+    width: auto !important;
+}
+.sec2-inner .text {
+    width: 50%;
+    margin-left: -65px;
+    z-index: 9;
+}
+
+.sec2 .text-inner{
+    position: relative;
+    margin: 55px 0 0 190px !important;
+}
+
+.sec2 .text-inner::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -30px;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #fff);
+}
+
+.left-right-sec:nth-child(even) .text {
+    margin-right: -65px;
+    text-align: right;
+}
+
+.left-right-sec:nth-child(even) .text-inner {
+    margin: 55px 190px 0 0 !important;
+}
+
+.left-right-sec:nth-child(even) .text-inner::before {
+    left: inherit;
+    right: -30px;   
+}
+
+.sec3 {
+    padding: 150px 0 0;
+}
+
+.sec3 h2 {
+    max-width: 60%;
+}
+
+.sec3-slider{
+    margin-top: 90px;
+}
+
+.slick-arrow {
+    position: absolute !important;
+    top: -130px !important;
+}
+
+.slick-prev {
+    left: inherit !important;
+    right: 180px !important;
+}
+
+.slick-next {
+    right: 90px !important;
+}
+
+.slick-next::before,
+.slick-prev::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff url(../images/arrow-next.svg) no-repeat;
+    background-size: 14px;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #fff;
+    opacity: 1 !important;
+}
+/* the color transparent because there is an default arrow appearing */
+.slick-prev::before{
+    background: transparent url(../images/arrow-prev.svg) no-repeat;
+    color: transparent !important;
+    background-size: 14px;
+    background-position: center;
+}
+
+.sec4 {
+    padding: 100px 0;
+}
+
+.box {
+    position: relative;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 85%;
+    min-height: 270px;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+.box h6 {
+    font-family: Space Grotest;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.sec4-boxes .img{
+    position: absolute;
+    top: 0;
+    /* left: 30px; */
+    z-index: -1;
+    opacity: 0;
+    transition: all ease 1s;
+}
+
+.box:hover .img{
+    opacity: 1;
+}
+
+footer {
+    position: relative;
+    padding: 50px 0;
+}
+footer ul li {
+    margin-bottom: 30px;
+}
+
+footer ul li a {
+    color: #fff !important;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #fff, transparent);
+}
+
+footer::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #fff, transparent);
+}
+
+.copyright {
+    padding: 25px 0;
+}
+
+.copyright p{
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
