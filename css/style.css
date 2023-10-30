@@ -52,6 +52,19 @@ header ul li a {
     color: #fff;
 }
 
+.mobile-nav {
+    display: none !important;
+    background: #000 !important;
+    z-index: 1;
+}
+
+.navbar-toggler img {
+    width: 30px;
+}
+
+.nav-link {
+    color: #fff !important;
+}
 .banner {
     height: 100vh;
     background: url(../images/banner.jpg) no-repeat;
@@ -322,3 +335,28 @@ footer::after {
     letter-spacing: 5px;
 }
 
+
+@media (max-width: 600px) {
+    .mobile-nav {
+        display: block !important;
+    }
+    header {
+        display: none !important;
+    }
+    .sec2 .sec2-inner.mobile{
+        flex-direction: column-reverse;
+    }
+    .sec2 .text-inner {
+        /* left: 0; */
+        margin: 0 !important;
+        width: 100%;
+    }
+    .slick-arrow {
+        position: absolute !important;
+        top: -100px !important;
+    }
+    .box {
+        width: 100%;
+    }
+    
+}
